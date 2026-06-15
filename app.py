@@ -27,7 +27,7 @@ def islem():
                     "role": "user",
                     "content": veri
                 }],
-                model="meta-llama/Meta-Llama-3-8B-Instruct",
+                model="mistralai/Mistral-7B-Instruct-v0.3",
                 max_tokens=500
             )
             return jsonify({"mesaj": res.choices[0].message.content})
